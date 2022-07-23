@@ -1,0 +1,36 @@
+html {
+    scroll-snap-type: y mandatory;
+    cursor: none;
+}
+
+* {}
+
+body {
+    margin: 0;
+}
+
+.center-img {
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: calc(5vw + 16px);
+    text-align: center;
+}
+
+.zeroOpacity {
+    opacity: 0;
+}
+
+.low-speed-transition {
+    transition: all 1.5s cubic-bezier(.84, .2, .12, 1.07);
+}
+
+.medium-speed-transition {
+    transition: all 1s cubic-bezier(.84, .2, .12, 1.07);
+}
+
+.high-speed-transition {
+    transition: all 0.4s cubic-bezier(.84, .2, .12, 1.07);
+}

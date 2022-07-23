@@ -1,0 +1,182 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {}
+
+main section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+main section:nth-child(1) {
+    background: linear-gradient(115.16deg, #D8B0FF 9.6%, #9B90E1 91.24%);
+}
+
+main section:nth-child(2) {
+    background: linear-gradient(242.94deg, #FFC97A -0.35%, #FF927A 100%);
+}
+
+main section:nth-child(3) {
+    background: linear-gradient(242.94deg, #E49BF6 -0.35%, #F69BAF 100%);
+}
+
+
+/* .development */
+
+.development {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+}
+
+.development .headline {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.development .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5vw;
+}
+
+.development .images>div {
+    width: calc(28vw);
+    height: calc(28vw);
+    opacity: 0;
+}
+
+.development .images>div:nth-child(1) {
+    background-image: url("https://kursiv.kz/sites/default/files/styles/_xlarge_1280x720/public/news1513223705.jpg?itok=ZRMbQHn4");
+}
+
+.development .images>div:nth-child(2) {
+    background-image: url("https://www.riverbedmarketing.com/wp-content/uploads/2017/05/How-To-Update-An-Outdated-Website-1.jpg");
+}
+
+.development .images>div:nth-child(3) {
+    background-image: url("https://jeda.id/files/2019/09/27-siber-350x233.jpg");
+}
+
+
+/* .development */
+
+
+/* .design */
+
+.design {
+    display: grid;
+    grid-template-columns: 40% 60%
+}
+
+.design .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.design .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.design .images div {
+    margin: auto;
+    width: 70%;
+    height: 40vh;
+}
+
+.design .images div:nth-child(1) {
+    background-image: url("https://honaracademy.com/wp-content/uploads/2021/01/graphic-design-studio.jpg");
+}
+
+.design .images div:nth-child(2) {
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4a632277067143.5c7d0b1bdfd84.jpg");
+}
+
+
+/* .design */
+
+
+/* .print */
+
+.print {
+    display: grid;
+    grid-template-columns: 40% 60%
+}
+
+.print .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.print .headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.print .images div {
+    margin: auto;
+    width: 70%;
+    height: 29vh;
+}
+
+.print .images div:nth-child(1) {
+    background-image: url("https://storyfox.ru/wp-content/uploads/2018/02/12-kopiya-4.jpg");
+}
+
+.print .images div:nth-child(2) {
+    background-image: url("https://i.ytimg.com/vi/dC3xLpkl89o/hqdefault.jpg");
+}
+
+.print .images div:nth-child(3) {
+    background-image: url("https://pbs.twimg.com/media/DQ8CppvVwAAtv-0.jpg");
+}
+
+
+/* .print */
+
+
+/* pointer down */
+
+.pointer {
+    position: fixed;
+    width: 50px;
+    height: 100px;
+    border-radius: 5rem;
+    background-color: white;
+}
+
+.pointer span {
+    /* display: block; */
+    animation: pointer1 infinite 1s ease-in-out;
+    /* border: ; */
+    bottom: 5px;
+    display: ab;
+    /* display: ab; */
+    position: absolute;
+    left: 33%;
+}
+
+@keyframes pointer1 {
+    0% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+    50% {
+        transform: translateY(0) rotate(90deg);
+    }
+    100% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+}
