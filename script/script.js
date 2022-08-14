@@ -52,16 +52,6 @@ class ui {
         }
     }
 
-    static performStyles(elements, styles) {
-        if (elements.length == styles.length) {
-            for (let i = 0; i <= elements.length; i++) {
-                ui.applyStyles(
-                    elements[i],
-                    styles[i]
-                );
-            }
-        }
-    }
 }
 
 // animation styles of first page
@@ -132,3 +122,15 @@ document.addEventListener("mousemove", event => {
     pointer.style.top = `${event.clientY}px`;
     console.log(event);
 })
+
+
+var options = {
+    strings: ['الدقة عنواننا', 'للابداع ننتمي', "التميز هدفنا"],
+    typeSpeed: 40,
+    loop: true,
+    startDelay: 50,
+    fadeOut: true,
+    showCursor: false
+};
+
+var typed = new Typed('.landing-page>div:nth-child(2) h3', options);

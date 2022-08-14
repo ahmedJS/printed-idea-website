@@ -12,16 +12,53 @@ main section {
 }
 
 main section:nth-child(1) {
-    background: linear-gradient(115.16deg, #D8B0FF 9.6%, #9B90E1 91.24%);
+    background-color: #FFCB01;
 }
 
 main section:nth-child(2) {
-    background: linear-gradient(242.94deg, #FFC97A -0.35%, #FF927A 100%);
+    background: linear-gradient(115.16deg, #D8B0FF 9.6%, #9B90E1 91.24%);
 }
 
 main section:nth-child(3) {
+    background: linear-gradient(242.94deg, #FFC97A -0.35%, #FF927A 100%);
+}
+
+main section:nth-child(4) {
     background: linear-gradient(242.94deg, #E49BF6 -0.35%, #F69BAF 100%);
 }
+
+
+/* landing-page */
+
+.landing-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page .illustration {
+    overflow: hidden;
+}
+
+.landing-page .illustration img {
+    max-height: 400px;
+    display: inline;
+}
+
+.landing-page div:nth-child(3) button {
+    width: 170px;
+    padding: 0.7rem;
+    outline: 0;
+    border: 0;
+    border-radius: 2rem;
+    background-color: #403300;
+    color: #fff;
+}
+
+
+/*end landing-page */
 
 
 /* .development */
